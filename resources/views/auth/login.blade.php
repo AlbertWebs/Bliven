@@ -69,23 +69,43 @@
           <div class="row">
             <div class="col-11 col-lg-10 mx-auto">
               <h3 class="text-white text-center mb-4">Sign In</h3>
-              <form id="loginForm" class="form-dark" method="post">
+              <form id="loginForm" class="form-dark" method="post" action="{{ route('login') }}">
+                @csrf
                 <div class="mb-3">
                   <label class="form-label text-light" for="emailAddress">Email Address</label>
-                  <input type="email" class="form-control" id="emailAddress" required placeholder="Enter Email">
+                  {{-- <input type="email" class="form-control" id="emailAddress" required placeholder="Enter Email"> --}}
+                  <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
+
+                    @error('email')
+                        <span class="invalid-feedback" role="alert">
+                            <strong>{{ $message }}</strong>
+                        </span>
+                    @enderror
                 </div>
                 <div class="mb-3">
                   <label class="form-label text-light" for="loginPassword">Password</label>
-                  <input type="password" class="form-control" id="loginPassword" required placeholder="Enter Password">
+                  {{-- <input type="password" class="form-control" id="loginPassword" required placeholder="Enter Password"> --}}
+                  <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
+
+                    @error('password')
+                        <span class="invalid-feedback" role="alert">
+                            <strong>{{ $message }}</strong>
+                        </span>
+                    @enderror
                 </div>
                 <div class="row mt-4">
                   <div class="col">
                     <div class="form-check text-2">
-                      <input id="remember-me" name="remember" class="form-check-input" type="checkbox">
+                      {{-- <input id="remember-me" name="remember" class="form-check-input" type="checkbox"> --}}
+                      <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
                       <label class="form-check-label text-light" for="remember-me">Remember Me</label>
                     </div>
                   </div>
-                  <div class="col-sm text-2 text-end"><a href="forgot-password-2.html">Forgot Password ?</a></div>
+                  <div class="col-sm text-2 text-end">
+                    <a href="{{ route('password.request') }}">
+                        {{ __('Forgot Your Password?') }}
+                    </a>
+                  </div>
                 </div>
                 <div class="d-grid my-4">
 					<button class="btn btn-primary" type="submit">Sign In</button>
@@ -101,7 +121,7 @@
                   <li class="social-icons-facebook"><a href="#" data-bs-toggle="tooltip" data-bs-original-title="Log In with Facebook"><i class="fab fa-facebook-f"></i></a></li>
                   {{-- <li class="social-icons-twitter"><a href="#" data-bs-toggle="tooltip" data-bs-original-title="Log In with Twitter"><i class="fab fa-twitter"></i></a></li> --}}
                   <li class="social-icons-google"><a href="#" data-bs-toggle="tooltip" data-bs-original-title="Log In with Google"><i class="fab fa-google"></i></a></li>
-                  {{-- <li class="social-icons-linkedin"><a href="#" data-bs-toggle="tooltip" data-bs-original-title="Log In with Linkedin"><i class="fab fa-linkedin"></i></a></li> --}}
+                  <li class="social-icons-linkedin"><a href="#" data-bs-toggle="tooltip" data-bs-original-title="Log In with Linkedin"><i class="fab fa-linkedin"></i></a></li>
                 </ul>
               </div>
               <p class="text-2 text-center text-light mb-0">Don't have an account? <a href="{{url('/')}}/register">Sign Up</a></p>

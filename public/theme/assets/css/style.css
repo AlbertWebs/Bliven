@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*----------------------------------------------------
 
-1. Global Area 
+1. Global Area
 2. Header Section
 =====================================================================*/
 /*=========
@@ -788,6 +788,12 @@ wizard section
   left: 5px;
 }
 
+.vector-img-two {
+    position: absolute;
+    bottom: 10px;
+    left: -105px;
+  }
+
 .wizard-form-field .wizard-form-input {
   width: 100%;
   margin-bottom: 20px;
@@ -1436,6 +1442,12 @@ wizard 5
     left: 0px;
   }
 
+  .vector-img-two {
+    position: absolute;
+    bottom: -60px;
+    left: 0px;
+  }
+
   .wizard-note-subject .select-option-area:after {
     top: 55px;
   }
@@ -1557,6 +1569,12 @@ wizard 5
     left: -20px;
   }
 
+  .vector-img-two {
+    position: absolute;
+    bottom: -38px;
+    left: -20px;
+  }
+
   .wizard > .steps li.checked a:after,
 .wizard > .steps li.current a:after {
     display: none;
@@ -1668,6 +1686,10 @@ wizard 5
   }
 
   .vector-img-one {
+    display: none;
+  }
+
+  .vector-img-two {
     display: none;
   }
 

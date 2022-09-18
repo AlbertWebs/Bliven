@@ -69,19 +69,50 @@
           <div class="row">
             <div class="col-11 col-lg-10 mx-auto">
               <h3 class="text-white text-center mb-4">Sign Up</h3>
-              <form id="registerForm" class="form-dark" method="post">
+              <form id="registerForm" class="form-dark" method="post" action="{{ route('register') }}">
+                @csrf
                 <div class="mb-3">
                   <label class="form-label text-light" for="fullName">Full Name</label>
-                  <input type="text" class="form-control" id="fullName" required placeholder="Enter Your Name">
+                  <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
+
+                    @error('name')
+                        <span class="invalid-feedback" role="alert">
+                            <strong>{{ $message }}</strong>
+                        </span>
+                    @enderror
+
                 </div>
                 <div class="mb-3">
                   <label class="form-label text-light" for="emailAddress">Email Address</label>
-                  <input type="email" class="form-control" id="emailAddress" required placeholder="Enter Your Email">
+                  {{-- <input type="email" class="form-control" id="emailAddress" required placeholder="Enter Your Email"> --}}
+                  <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
+
+                    @error('email')
+                        <span class="invalid-feedback" role="alert">
+                            <strong>{{ $message }}</strong>
+                        </span>
+                    @enderror
                 </div>
                 <div class="mb-3">
                   <label class="form-label text-light" for="loginPassword">Password</label>
-                  <input type="password" class="form-control" id="loginPassword" required placeholder="Enter Password">
+                  {{-- <input type="password" class="form-control" id="loginPassword" required placeholder="Enter Password"> --}}
+                  <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
+
+                    @error('password')
+                        <span class="invalid-feedback" role="alert">
+                            <strong>{{ $message }}</strong>
+                        </span>
+                    @enderror
                 </div>
+
+                <div class="mb-3">
+                    <label class="form-label text-light" for="loginPassword">Password Confirm</label>
+                    {{-- <input type="password" class="form-control" id="loginPassword" required placeholder="Enter Password"> --}}
+
+                        <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
+
+                  </div>
+
                 <div class="mb-3 mt-4">
                   <div class="form-check text-2">
                     <input id="agree" name="agree" class="form-check-input" type="checkbox">
@@ -102,7 +133,7 @@
                   <li class="social-icons-facebook"><a href="#" data-bs-toggle="tooltip" data-bs-original-title="Log In with Facebook"><i class="fab fa-facebook-f"></i></a></li>
                   {{-- <li class="social-icons-twitter"><a href="#" data-bs-toggle="tooltip" data-bs-original-title="Log In with Twitter"><i class="fab fa-twitter"></i></a></li> --}}
                   <li class="social-icons-google"><a href="#" data-bs-toggle="tooltip" data-bs-original-title="Log In with Google"><i class="fab fa-google"></i></a></li>
-                  {{-- <li class="social-icons-linkedin"><a href="#" data-bs-toggle="tooltip" data-bs-original-title="Log In with Linkedin"><i class="fab fa-linkedin"></i></a></li> --}}
+                  <li class="social-icons-linkedin"><a href="#" data-bs-toggle="tooltip" data-bs-original-title="Log In with Linkedin"><i class="fab fa-linkedin"></i></a></li>
                 </ul>
               </div>
               <p class="text-2 text-center text-light mb-0">Already have an account? <a href="{{url('/')}}/login">Sign In</a></p>

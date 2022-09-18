@@ -30,11 +30,12 @@
     <div class="wrapper wizard d-flex clearfix multisteps-form position-relative">
         <div class="steps order-2 position-relative w-25">
             <div class="multisteps-form__progress">
-                <span class="multisteps-form__progress-btn js-active" title="Application data"><i class="far fa-user"></i><span>Personal information</span></span>
-                <span class="multisteps-form__progress-btn" title="Tax residency"><i class="far fa-user"></i><span>Solution Provider</span></span>
-                <span class="multisteps-form__progress-btn" title="Indentity documents"><i class="far fa-user"></i><span>Personal information</span></span>
-                <span class="multisteps-form__progress-btn" title="Investability"><i class="far fa-user"></i><span>Choose a payment</span></span>
-                <span class="multisteps-form__progress-btn" title="Review"><i class="far fa-user"></i><span>Review </span></span>
+                <span class="multisteps-form__progress-btn js-active" title="Application data"><i class="far fa-user"></i><span>Personal Details</span></span>
+                <span class="multisteps-form__progress-btn" title="Tax residency"><i class="fa fa-suitcase"></i><span>Business Details</span></span>
+                <span class="multisteps-form__progress-btn" title="Indentity documents"><i class="fa fa-book"></i><span>Income Statement Details</span></span>
+                <span class="multisteps-form__progress-btn" title="Investability"><i class="fa fa-edit"></i><span>Balance Sheet Details</span></span>
+                <span class="multisteps-form__progress-btn" title="Investability"><i class="fa fa-gavel"></i><span>Capital Structure Details</span></span>
+                <span class="multisteps-form__progress-btn" title="Review"><i class="fa fa-check"></i><span>Review </span></span>
             </div>
         </div>
         <form class="multisteps-form__form w-75 order-1" action="#" id="wizard">
@@ -45,7 +46,7 @@
                         <div class="inner pb-100 clearfix">
                             <div class="wizard-title text-center">
                                 <h3>Please, enter your personal information</h3>
-                                <p>has been a while. I would like to present you the project I work </p>
+                                <p>Your Data is Preserved and protected by our privacy policy </p>
                             </div>
                             <div class="wizard-photo-area">
                                 <div class="wizard-photo-upload position-relative">
@@ -55,73 +56,45 @@
                                         <img id="profile-image" src="{{asset('theme/assets/img/pf1.png')}}" alt="your image" />
                                     </div>
                                 </div>
-                                <div class="photo-upload-text">has been a while. I would like to present you the project I work on a few
+                                <div class="photo-upload-text text-center">Add Your Avatar Here, Trust Me, It Feels Good
                                 </div>
                             </div>
                             <div class="wizard-form-field mb-85">
                                 <div class="wizard-form-input">
                                     <label>Name</label>
-                                    <input type="text" name="name">
+                                    <input type="text" value="{{Auth::User()->name}}" name="name">
                                 </div>
                                 <div class="wizard-form-input">
                                     <label>Email</label>
-                                    <input type="email" name="email">
+                                    <input type="email" value="{{Auth::User()->email}}" name="email">
                                 </div>
+
                                 <div class="wizard-form-input mb-60 mt-60">
                                     <div class="line"></div>
                                 </div>
                                 <div class="wizard-form-input">
-                                    <label>What are you?</label>
-                                    <div class="wizard-checked">
-                                        <label class="checkbox-circle">
-                                            <input type="radio" checked="checked" name="student_type" value="University Student">
-                                            <span class="checkmark"></span>
-                                            University Student
-                                        </label>
-                                    </div>
-                                    <div class="wizard-checked">
-                                        <label class="checkbox-circle">
-                                            <input type="radio" name="student_type" value="Professional">
-                                            <span class="checkmark"></span>
-                                            Professional
-                                        </label>
-                                    </div>
+                                    <label>DOB</label>
+                                    <input type="date" value="" name="dob">
                                 </div>
                                 <div class="wizard-form-input">
-                                    <label>University</label>
-                                    <input type="email" name="email">
+                                    <label>Address</label>
+                                    <input placeholder="ZIP -Postal address -Town -County" type="text" value="" name="address">
                                 </div>
                                 <div class="wizard-form-input">
-                                    <label>Major</label>
-                                    <input type="email" name="email">
+                                    <label>National ID Number</label>
+                                    <input type="text" value="" name="id">
                                 </div>
                                 <div class="wizard-form-input">
-                                    <label>Graduation Date</label>
-                                    <input type="email" name="email">
+                                    <label>KRA PIN</label>
+                                    <input type="text" value="" name="kra">
                                 </div>
+
                                 <div class="wizard-form-input mb-60 mt-60">
                                     <div class="line"></div>
                                 </div>
-                                <div class="wizard-form-input">
-                                    <label>Do you have a Tax ID?</label>
-                                    <div class="wizard-checked">
-                                        <label class="checkbox-circle">
-                                            <input type="radio" checked="checked" name="ssn" value="I Have a US Tax ID (SSN)">
-                                            <span class="checkmark"></span>
-                                            <span>I Have a US Tax ID (SSN)</span>
-                                        </label>
-                                    </div>
-                                    <div class="wizard-checked">
-                                        <label class="checkbox-circle">
-                                            <input type="radio" name="ssn" value="I Don't have a US Tax ID (SSN)">
-                                            <span class="checkmark"></span>
-                                            <span>I don’t have a US Tax ID (SSN)</span>
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="form-field-text">has been a while. I would like to present you the
-                                    project I work on a few
-                                    months ago.
+
+                                <div class="form-field-text">
+                                    {{--  --}}
                                 </div>
                             </div>
                             <div class="wizard-v3-progress">
@@ -149,11 +122,11 @@
                     <div class="wizard-forms section-padding">
                         <div class="inner pb-100 clearfix">
                             <div class="wizard-title text-center">
-                                <h3>Please, enter your personal information</h3>
-                                <p>has been a while. I would like to present you the project I work </p>
+                                <h3>Business Information</h3>
+                                <p>Important info about your business </p>
                             </div>
                             <div class="wizard-solution-select">
-                                <div class="row">
+                                {{-- <div class="row">
                                     <div class="col-md-4">
                                         <label class="option_item">
                                             <input type="checkbox" class="checkbox">
@@ -184,31 +157,42 @@
                                             </span>
                                         </label>
                                     </div>
+                                </div> --}}
+                            </div>
+                            <div class="wizard-form-field">
+                                <div class="wizard-form-input">
+                                    <label>What is the name of your business?</label>
+                                    <input type="text" value="" name="bname">
+                                </div>
+                                <div class="wizard-form-input">
+                                    <label>When does your fiscal year begin?</label>
+                                    <input type="text" value="" name="fiscal">
+                                </div>
+
+
+                                <div class="wizard-form-input">
+                                    <label>What is the Business Registration Number?</label>
+                                    <input type="text" value="" name="bnumber">
+                                </div>
+                                <div class="wizard-form-input">
+                                    <label>What is the address of the Business?</label>
+                                    <input type="text" value="" name="bnumber">
                                 </div>
                             </div>
-                            <div class="wizard-note-subject pb-100">
+                            <div class="wizard-note-subject">
                                 <div class="wizard-form-input select-option-area">
-                                    <label>Select Subject</label>
-                                    <select>
-                                        <option>Subject 1</option>
-                                        <option>Subject 2</option>
-                                        <option>Subject 3</option>
-                                        <option>Subject 4</option>
+                                    <label>What kind of business is it?</label>
+                                    <select name="b-type">
+                                        <option value="product">Product</option>
+                                        <option value="services">Services</option>
+                                        <option value="both">Both</option>
+                                        <option value="other">Other</option>
                                     </select>
                                 </div>
+
                                 <div class="wizard-form-input">
-                                    <label>Write Note</label>
-                                    <textarea></textarea>
-                                </div>
-                                <div class="wizard-form-input">
-                                    <div class="wizard-checked">
-                                        <input type="radio" checked="checked" name="radio">
-                                        <span>I Have a US Tax ID (SSN)</span>
-                                    </div>
-                                    <div class="wizard-checked">
-                                        <input type="radio" checked="checked" name="radio">
-                                        <span>I don’t have a US Tax ID (SSN)</span>
-                                    </div>
+                                    <label>What kind of products/services do you sell/offer?</label>
+                                    <textarea name="content"></textarea>
                                 </div>
                             </div>
                             <div class="wizard-v3-progress">
@@ -221,7 +205,8 @@
                             </div>
                         </div>
                         <!-- /.inner -->
-                        <div class="vector-img-one">
+                        <br><br>
+                        <div class="vector-img-two">
                             <img src="{{asset('theme/assets/img/vb2.png')}}" alt="">
                         </div>
                         <div class="actions">
@@ -237,8 +222,31 @@
                     <div class="wizard-forms">
                         <div class="inner pb-100 clearfix">
                             <div class="wizard-title text-center">
-                                <h3>Please, enter your personal information</h3>
-                                <p>has been a while. I would like to present you the project I work </p>
+                                <h3>Income Statement Details</h3>
+                                <p>More infomation on how your Business makes Business </p>
+                            </div>
+                            <div class="wizard-form-field">
+                                <div class="wizard-form-input">
+                                    <label>What are your sources of business revenue?</label>
+                                    <input type="text" value="" name="sources">
+                                </div>
+                                <div class="wizard-form-input">
+                                    <label>What is your service charge?</label>
+                                    <input type="text" value="" name="service-charge">
+                                </div>
+                                <div class="wizard-form-input">
+                                    <label>What is the unit price for each of the items you sell?</label>
+                                    <input type="text" value="" name="unit-price">
+                                </div>
+
+                                <div class="wizard-form-input">
+                                    <label>What is the Business Registration Number?</label>
+                                    <input type="text" value="" name="bnumber">
+                                </div>
+                                <div class="wizard-form-input">
+                                    <label>What is the address of the Business?</label>
+                                    <input type="text" value="" name="bnumber">
+                                </div>
                             </div>
                             <div class="wizard-form-input select-caret">
                                 <select>

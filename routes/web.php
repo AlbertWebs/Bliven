@@ -14,9 +14,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Auth::routes();
-Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('admin.index');
+// Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('admin.index');
 
 
 
 Auth::routes();
-Route::get('/admin/home', [App\Http\Controllers\HomeController::class, 'adminHome'])->name('admin.home')->middleware('is_admin');
+Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('admin.home')->middleware('is_admin');
