@@ -219,7 +219,7 @@
                 </div>
                 <!-- div 3 -->
                 <div class="multisteps-form__panel" data-animation="slideHorz">
-                    <div class="wizard-forms">
+                    <div class="wizard-forms section-padding">
                         <div class="inner pb-100 clearfix">
                             <div class="wizard-title text-center">
                                 <h3>Income Statement Details</h3>
@@ -239,109 +239,34 @@
                                     <input type="text" value="" name="unit-price">
                                 </div>
 
+
+
                                 <div class="wizard-form-input">
-                                    <label>What is the Business Registration Number?</label>
-                                    <input type="text" value="" name="bnumber">
+                                    <label>What is your carriage inwards/outwards expenses?</label>
+                                    <input type="text" value="" name="carriage">
                                 </div>
+                            </div>
+                            <div class="wizard-note-subject">
+                                <div class="wizard-form-input select-option-area">
+                                    <label>Do you offer any Discounts?</label>
+                                    <select name="discounts">
+                                        <option value="product">yes</option>
+                                        <option value="services">no</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="wizard-note-subject">
                                 <div class="wizard-form-input">
-                                    <label>What is the address of the Business?</label>
-                                    <input type="text" value="" name="bnumber">
+                                    <label>What kind of expenses do you incur?</label>
+                                    <textarea name="expenses"></textarea>
                                 </div>
                             </div>
-                            <div class="wizard-form-input select-caret">
-                                <select>
-                                    <option>Subject 1</option>
-                                    <option>Subject 2</option>
-                                    <option>Subject 3</option>
-                                    <option>Subject 4</option>
-                                </select>
-                            </div>
+
+
                             <div class="wizard-form-input mb-60 mt-60">
                                 <div class="line line2"></div>
                             </div>
-                            <div class="wizard-duration mb-60">
-                                <span class="wizard-sub-text">Duration Services</span>
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <label class="duration-option">
-                                            <input type="radio" name="duration-service" value="4 weeks" class="d-checkbox">
-                                            <span class="checkbox-circle-tick"></span>
-                                            <span class="duration-box text-center">
-                                                <span class="title">4</span>
-                                                <span>Weeks</span>
-                                            </span>
-                                        </label>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <label class="duration-option">
-                                            <input type="radio" name="duration-service" value="6 weeks" class="d-checkbox">
-                                            <span class="checkbox-circle-tick"></span>
-                                            <span class="duration-box text-center">
-                                                <span class="title">6</span>
-                                                <span>Weeks</span>
-                                            </span>
-                                        </label>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <label class="duration-option">
-                                            <input type="radio" name="duration-service" value="9 weeks" class="d-checkbox">
-                                            <span class="checkbox-circle-tick"></span>
-                                            <span class="duration-box text-center">
-                                                <span class="title">9</span>
-                                                <span>Weeks</span>
-                                            </span>
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="wizard-form-input mb-60 mt-60">
-                                <div class="line line2"></div>
-                            </div>
-                            <div class="wizard-day-item">
-                                <span class="wizard-sub-text">Choose the included services</span>
-                                <div class="wizard-checkbox-option">
-                                    <ul>
-                                        <li>
-                                            <label class="block-option">
-                                                <input type="checkbox" name="day-checkout" class="checked-checkbox">
-                                                <span class="checkbox-tick"></span>
-                                                <span class="day-label">Select Day</span>
-                                            </label>
-                                        </li>
-                                        <li>
-                                            <label class="block-option">
-                                                <input type="checkbox" name="day-checkout" class="checked-checkbox">
-                                                <span class="checkbox-tick"></span>
-                                                <span class="day-label">Select Day</span>
-                                            </label>
-                                        </li>
-                                        <li>
-                                            <label class="block-option">
-                                                <input type="checkbox" name="day-checkout" class="checked-checkbox">
-                                                <span class="checkbox-tick"></span>
-                                                <span class="day-label">Select Day</span>
-                                            </label>
-                                        </li>
-                                        <li>
-                                            <label class="block-option">
-                                                <input type="checkbox" name="day-checkout" class="checked-checkbox">
-                                                <span class="checkbox-tick"></span>
-                                                <span class="day-label">Select Day</span>
-                                            </label>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="wizard-form-input mb-60 mt-60">
-                                <div class="line line2"></div>
-                            </div>
-                            <div class="wizard-document-upload pb-200">
-                                <span class="wizard-sub-text">Upload the documents</span>
-                                <div class="custom-file">
-                                    <input type="file" class="custom-file-input" id="customFile">
-                                    <label class="custom-file-label" for="customFile">jpg or .pdf should  be more than 500KB or 300PI</label>
-                                </div>
-                            </div>
+
                             <div class="wizard-v3-progress">
                                 <span>3 to 5 step</span>
                                 <h3>59% to complete</h3>
@@ -365,194 +290,72 @@
                 </div>
                 <!-- div 4 -->
                 <div class="multisteps-form__panel" data-animation="slideHorz">
-                    <div class="wizard-forms">
-                        <div class="inner pb-200 clearfix">
+                    <div class="wizard-forms section-padding">
+                        <div class="inner pb-100 clearfix">
                             <div class="wizard-title text-center">
-                                <h3>Choose Service Provider</h3>
-                                <p>has been a while. I would like to present you the project I work </p>
+                                <h3>Balance Sheet Details</h3>
+                                <p>More info about your Balance Sheets </p>
                             </div>
-                            <div id="slider-service" class="wizard-service-slide">
-                                <label class="services-box-item">
-                                    <input type="checkbox" name="contact_person" value="Mr Leo" class="service-checkbox">
-                                    <span class="w-service-box text-center position-relative">
-                                        <span class="tooltip-info" data-toggle="tooltip" data-placement="top" title="Mr Leo Service officer"></span>
-                                        <span class="service-icon">
-                                            <img src="{{asset('theme/assets/img/ws1.png')}}" alt="">
-                                        </span>
-                                        <span class="service-text">
-                                            Mr Leo
-                                        </span>
-                                        <span class="option-seclect">
-                                            <span>Selected</span>
-                                        </span>
-                                    </span>
-                                </label>
-                                <label class="services-box-item">
-                                    <input type="checkbox" name="contact_person" value="Mr Leo" class="service-checkbox">
-                                    <span class="w-service-box text-center position-relative">
-                                        <span class="tooltip-info" data-toggle="tooltip" data-placement="top" title="Mr Jim Service officer"></span>
-                                        <span class="service-icon">
-                                            <img src="{{asset('theme/assets/img/ws2.jpg')}}" alt="">
-                                        </span>
-                                        <span class="service-text">
-                                            Mr Jim
-                                        </span>
-                                        <span class="option-seclect">
-                                            <span>Selected</span>
-                                        </span>
-                                    </span>
-                                </label>
-                                <label class="services-box-item">
-                                    <input type="checkbox" name="contact_person" value="Mr Leo" class="service-checkbox">
-                                    <span class="w-service-box text-center position-relative">
-                                        <span class="tooltip-info" data-toggle="tooltip" data-placement="top" title="Mrs Katie Service officer"></span>
-                                        <span class="service-icon">
-                                            <img src="{{asset('theme/assets/img/ws3.jpg')}}" alt="">
-                                        </span>
-                                        <span class="service-text">
-                                            Mrs Katie
-                                        </span>
-                                        <span class="option-seclect">
-                                            <span>Selected</span>
-                                        </span>
-                                    </span>
-                                </label>
-                                <label class="services-box-item">
-                                    <input type="checkbox" name="contact_person" value="Mr Leo" class="service-checkbox">
-                                    <span class="w-service-box text-center position-relative">
-                                        <span class="tooltip-info" data-toggle="tooltip" data-placement="top" title="Mr Doe Service officer"></span>
-                                        <span class="service-icon">
-                                            <img src="{{asset('theme/assets/img/ws4.jpg')}}" alt="">
-                                        </span>
-                                        <span class="service-text">
-                                            Mr Doe
-                                        </span>
-                                        <span class="option-seclect">
-                                            <span>Selected</span>
-                                        </span>
-                                    </span>
-                                </label>
-                                <label class="services-box-item">
-                                    <input type="checkbox" name="contact_person" value="Mr Leo" class="service-checkbox">
-                                    <span class="w-service-box text-center position-relative">
-                                        <span class="tooltip-info" data-toggle="tooltip" data-placement="top" title="Mr Leo Service officer"></span>
-                                        <span class="service-icon">
-                                            <img src="{{asset('theme/assets/img/ws5.jpg')}}" alt="">
-                                        </span>
-                                        <span class="service-text">
-                                            Mr Leo
-                                        </span>
-                                        <span class="option-seclect">
-                                            <span>Selected</span>
-                                        </span>
-                                    </span>
-                                </label>
-                                <label class="services-box-item">
-                                    <input type="checkbox" name="contact_person" value="Mr Leo" class="service-checkbox">
-                                    <span class="w-service-box text-center position-relative">
-                                        <span class="tooltip-info" data-toggle="tooltip" data-placement="top" title="Mr Jone Service officer"></span>
-                                        <span class="service-icon">
-                                            <img src="{{asset('theme/assets/img/ws6.jpg')}}" alt="">
-                                        </span>
-                                        <span class="service-text">
-                                            Mr Jone
-                                        </span>
-                                        <span class="option-seclect">
-                                            <span>Selected</span>
-                                        </span>
-                                    </span>
-                                </label>
-                                <label class="services-box-item">
-                                    <input type="checkbox" name="contact_person" value="Mr Leo" class="service-checkbox">
-                                    <span class="w-service-box text-center position-relative">
-                                        <span class="tooltip-info" data-toggle="tooltip" data-placement="top" title="Mr Leo Service officer"></span>
-                                        <span class="service-icon">
-                                            <img src="{{asset('theme/assets/img/ws1.png')}}" alt="">
-                                        </span>
-                                        <span class="service-text">
-                                            Mr Leo
-                                        </span>
-                                        <span class="option-seclect">
-                                            <span>Selected</span>
-                                        </span>
-                                    </span>
-                                </label>
-                                <label class="services-box-item">
-                                    <input type="checkbox" name="contact_person" value="Mr Leo" class="service-checkbox">
-                                    <span class="w-service-box text-center position-relative">
-                                        <span class="tooltip-info" data-toggle="tooltip" data-placement="top" title="Mr Leo Service officer"></span>
-                                        <span class="service-icon">
-                                            <img src="{{asset('theme/assets/img/ws2.jpg')}}" alt="">
-                                        </span>
-                                        <span class="service-text">
-                                            Mr Leo
-                                        </span>
-                                        <span class="option-seclect">
-                                            <span>Selected</span>
-                                        </span>
-                                    </span>
-                                </label>
-                                <label class="services-box-item">
-                                    <input type="checkbox" name="contact_person" value="Mr Leo" class="service-checkbox">
-                                    <span class="w-service-box text-center position-relative">
-                                        <span class="tooltip-info" data-toggle="tooltip" data-placement="top" title="Mr Leo Service officer"></span>
-                                        <span class="service-icon">
-                                            <img src="{{asset('theme/assets/img/ws3.jpg')}}" alt="">
-                                        </span>
-                                        <span class="service-text">
-                                            Mr Leo
-                                        </span>
-                                        <span class="option-seclect">
-                                            <span>Selected</span>
-                                        </span>
-                                    </span>
-                                </label>
-                                <label class="services-box-item">
-                                    <input type="checkbox" name="contact_person" value="Mr Leo" class="service-checkbox">
-                                    <span class="w-service-box text-center position-relative">
-                                        <span class="tooltip-info" data-toggle="tooltip" data-placement="top" title="Mr Leo Service officer"></span>
-                                        <span class="service-icon">
-                                            <img src="{{asset('theme/assets/img/ws4.jpg')}}" alt="">
-                                        </span>
-                                        <span class="service-text">
-                                            Mr Leo
-                                        </span>
-                                        <span class="option-seclect">
-                                            <span>Selected</span>
-                                        </span>
-                                    </span>
-                                </label>
-                                <label class="services-box-item">
-                                    <input type="checkbox" name="contact_person" value="Mr Leo" class="service-checkbox">
-                                    <span class="w-service-box text-center position-relative">
-                                        <span class="tooltip-info" data-toggle="tooltip" data-placement="top" title="Mr Leo Service officer"></span>
-                                        <span class="service-icon">
-                                            <img src="{{asset('theme/assets/img/ws5.jpg')}}" alt="">
-                                        </span>
-                                        <span class="service-text">
-                                            Mr Leo
-                                        </span>
-                                        <span class="option-seclect">
-                                            <span>Selected</span>
-                                        </span>
-                                    </span>
-                                </label>
-                                <label class="services-box-item">
-                                    <input type="checkbox" name="contact_person" value="Mr Leo" class="service-checkbox">
-                                    <span class="w-service-box text-center position-relative">
-                                        <span class="tooltip-info" data-toggle="tooltip" data-placement="top" title="Mr Leo Service officer"></span>
-                                        <span class="service-icon">
-                                            <img src="{{asset('theme/assets/img/ws6.jpg')}}" alt="">
-                                        </span>
-                                        <span class="service-text">
-                                            Mr Leo
-                                        </span>
-                                        <span class="option-seclect">
-                                            <span>Selected</span>
-                                        </span>
-                                    </span>
-                                </label>
+                            {{--  --}}
+                            <div class="wizard-note-subject">
+                                <div class="wizard-form-input select-option-area">
+                                    <label>Are there any customers who owe you?</label>
+                                    <select name="customers-owe">
+                                        <option value="yes">Yes</option>
+                                        <option value="no">No</option>
+                                    </select>
+                                </div>
                             </div>
+
+                            <div class="wizard-note-subject">
+                                <div class="wizard-form-input select-option-area">
+                                    <label>Do you owe your suppliers?</label>
+                                    <select name="supliers-owe">
+                                        <option value="yes">Yes</option>
+                                        <option value="no">No</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="wizard-note-subject">
+
+                                <div class="wizard-form-input select-option-area">
+                                    <label>Do you have any long-term loans?</label>
+                                    <select name="long-term-loans">
+                                        <option value="yes">Yes</option>
+                                        <option value="no">No</option>
+                                    </select>
+                                </div>
+
+                            </div>
+
+                            <div class="wizard-note-subject">
+
+                                <div class="wizard-form-input select-option-area">
+                                    <label>Do you have any prepaid expenses?</label>
+                                    <select name="prepaid-expenses">
+                                        <option value="yes">Yes</option>
+                                        <option value="no">No</option>
+                                    </select>
+                                </div>
+
+                            </div>
+
+                            <div class="wizard-note-subject">
+
+                                <div class="wizard-form-input select-option-area">
+                                    <label>Do you have any accured expenses?</label>
+                                    <select name="accrued-expenses">
+                                        <option value="yes">Yes</option>
+                                        <option value="no">No</option>
+                                    </select>
+                                </div>
+
+                            </div>
+
+
+
+                            {{--  --}}
                             <div class="wizard-v3-progress">
                                 <span>4 to 5 step</span>
                                 <h3>79% to complete</h3>
@@ -563,6 +366,7 @@
                             </div>
                         </div>
                         <!-- /.inner -->
+                        <br><br><br><br>
                         <div class="vector-img-one">
                             <img src="{{asset('theme/assets/img/vb4.png')}}" alt="">
                         </div>
@@ -576,54 +380,52 @@
                 </div>
                 <!-- div 5 -->
                 <div class="multisteps-form__panel" data-animation="slideHorz">
-                    <div class="wizard-forms">
+                    <div class="wizard-forms section-padding">
                         <div class="inner pb-100">
                             <div class="wizard-title text-center">
-                                <h3>Choose Service Provider</h3>
-                                <p>has been a while. I would like to present you the project I work </p>
+                                <h3>Capital Structure Details</h3>
+                                <p>
+                                    {{--  --}}
+                                </p>
                             </div>
                             <div class="wizard-day-item">
-                                <span class="wizard-sub-text">Confirmation Service Via</span>
-                                <div class="wizard-checkbox-option">
-                                    <ul>
-                                        <li>
-                                            <label class="block-option">
-                                                <input type="checkbox" name="day-checkout" class="checked-checkbox">
-                                                <span class="checkbox-tick"></span>
-                                                <span class="day-label">Sms</span>
-                                            </label>
-                                        </li>
-                                        <li>
-                                            <label class="block-option">
-                                                <input type="checkbox" name="day-checkout" class="checked-checkbox">
-                                                <span class="checkbox-tick"></span>
-                                                <span class="day-label">Email Address</span>
-                                            </label>
-                                        </li>
-                                        <li>
-                                            <label class="block-option">
-                                                <input type="checkbox" name="day-checkout" class="checked-checkbox">
-                                                <span class="checkbox-tick"></span>
-                                                <span class="day-label">Call Number</span>
-                                            </label>
-                                        </li>
-                                    </ul>
+                                <div class="wizard-note-subject">
+                                    <div class="wizard-form-input select-option-area">
+                                        <label>Do you have any partner(s) in your business?</label>
+                                        <select name="partners">
+                                            <option value="yes">Yes</option>
+                                            <option value="no">No</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="wizard-form-input mb-60 mt-60">
+                                <div class="line line2"></div>
+                            </div>
+                            <div class="wizard-day-item">
+                                <div class="wizard-note-subject">
+                                    <div class="wizard-form-input select-option-area">
+                                        <label>Are you going to be drawing some funds from your business for personal use?</label>
+                                        <select name="drawing">
+                                            <option value="yes">Yes</option>
+                                            <option value="no">No</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="wizard-form-input mb-60 mt-60">
+                                <div class="line line2"></div>
+                            </div>
+                            <div class="wizard-form-field mb-85">
+                                <div class="wizard-form-input">
+                                    <label>What was your initial investment?</label>
+                                    <input type="text" value="" name="investment">
                                 </div>
                             </div>
                              <div class="wizard-form-input mb-60 mt-60">
                                 <div class="line line2"></div>
                             </div>
-                            <div class="social-media-find">
-                                <span class="wizard-sub-text">Confirmation Service Via</span>
-                                <div class="social-find-caret">
-                                    <select>
-                                        <option>Social media</option>
-                                        <option>Social media</option>
-                                        <option>Social media</option>
-                                        <option>Social media</option>
-                                    </select>
-                                </div>
-                            </div>
+
                             <div class="wizard-v3-progress">
                                 <span>5 to 5 step</span>
                                 <h3>100% to complete</h3>
