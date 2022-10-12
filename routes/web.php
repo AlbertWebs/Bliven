@@ -15,8 +15,10 @@ use Illuminate\Support\Facades\Route;
 
 Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
+Route::post('/get-wizard-data', [App\Http\Controllers\HomeController::class, 'wizard'])->name('wizard');
 
 
 Auth::routes();
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('admin.home')->middleware('is_admin');
+
+

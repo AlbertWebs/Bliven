@@ -38,7 +38,8 @@
                 <span class="multisteps-form__progress-btn" title="Review"><i class="fa fa-check"></i><span>Review </span></span>
             </div>
         </div>
-        <form class="multisteps-form__form w-75 order-1" action="#" id="wizard">
+        <form class="multisteps-form__form w-75 order-1" method="post" action="{{route('wizard')}}" id="wizard" enctype="multipart/form-data">
+            @csrf
             <div class="form-area position-relative">
                 <!-- div 1 -->
                 <div class="multisteps-form__panel js-active" data-animation="slideHorz">
@@ -51,7 +52,7 @@
                             <div class="wizard-photo-area">
                                 <div class="wizard-photo-upload position-relative">
                                     <label for="files">Upload Image</label>
-                                    <input id="files" type='file' onchange="readURL(this);" style="display: none;">
+                                    <input name="file" id="files" type='file' onchange="readURL(this);" style="display: none;">
                                     <div class="display-img text-center">
                                         <img id="profile-image" src="{{asset('theme/assets/img/pf1.png')}}" alt="your image" />
                                     </div>
@@ -176,7 +177,7 @@
                                 </div>
                                 <div class="wizard-form-input">
                                     <label>What is the address of the Business?</label>
-                                    <input type="text" value="" name="bnumber">
+                                    <input type="text" value="" name="baddress">
                                 </div>
                             </div>
                             <div class="wizard-note-subject">
@@ -192,7 +193,7 @@
 
                                 <div class="wizard-form-input">
                                     <label>What kind of products/services do you sell/offer?</label>
-                                    <textarea name="content"></textarea>
+                                    <textarea name="services_content"></textarea>
                                 </div>
                             </div>
                             <div class="wizard-v3-progress">
@@ -232,11 +233,11 @@
                                 </div>
                                 <div class="wizard-form-input">
                                     <label>What is your service charge?</label>
-                                    <input type="text" value="" name="service-charge">
+                                    <input type="text" value="" name="service_charge">
                                 </div>
                                 <div class="wizard-form-input">
                                     <label>What is the unit price for each of the items you sell?</label>
-                                    <input type="text" value="" name="unit-price">
+                                    <input type="text" value="" name="unit_price">
                                 </div>
 
 
@@ -250,8 +251,8 @@
                                 <div class="wizard-form-input select-option-area">
                                     <label>Do you offer any Discounts?</label>
                                     <select name="discounts">
-                                        <option value="product">yes</option>
-                                        <option value="services">no</option>
+                                        <option value="yes">yes</option>
+                                        <option value="no">no</option>
                                     </select>
                                 </div>
                             </div>
@@ -300,7 +301,7 @@
                             <div class="wizard-note-subject">
                                 <div class="wizard-form-input select-option-area">
                                     <label>Are there any customers who owe you?</label>
-                                    <select name="customers-owe">
+                                    <select name="customers_owe_me">
                                         <option value="yes">Yes</option>
                                         <option value="no">No</option>
                                     </select>
@@ -310,7 +311,7 @@
                             <div class="wizard-note-subject">
                                 <div class="wizard-form-input select-option-area">
                                     <label>Do you owe your suppliers?</label>
-                                    <select name="supliers-owe">
+                                    <select name="supliers_owe">
                                         <option value="yes">Yes</option>
                                         <option value="no">No</option>
                                     </select>
@@ -321,7 +322,7 @@
 
                                 <div class="wizard-form-input select-option-area">
                                     <label>Do you have any long-term loans?</label>
-                                    <select name="long-term-loans">
+                                    <select name="long_term_loans">
                                         <option value="yes">Yes</option>
                                         <option value="no">No</option>
                                     </select>
@@ -333,7 +334,7 @@
 
                                 <div class="wizard-form-input select-option-area">
                                     <label>Do you have any prepaid expenses?</label>
-                                    <select name="prepaid-expenses">
+                                    <select name="prepaid_expenses">
                                         <option value="yes">Yes</option>
                                         <option value="no">No</option>
                                     </select>
@@ -345,7 +346,7 @@
 
                                 <div class="wizard-form-input select-option-area">
                                     <label>Do you have any accured expenses?</label>
-                                    <select name="accrued-expenses">
+                                    <select name="accrued_expenses">
                                         <option value="yes">Yes</option>
                                         <option value="no">No</option>
                                     </select>
