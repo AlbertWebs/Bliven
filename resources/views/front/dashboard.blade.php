@@ -7,22 +7,22 @@
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <title>Bliven - Financial Software</title>
       <!-- Favicon -->
-      <link rel="shortcut icon" href="{{asset('dashboard/images/favicon.ico')}}" />
+      <link rel="shortcut icon" href="{{asset('dashboards/images/favicon.ico')}}" />
       <!-- Bootstrap CSS -->
-      <link rel="stylesheet" href="{{asset('dashboard/css/bootstrap.min.css')}}">
+      <link rel="stylesheet" href="{{asset('dashboards/css/bootstrap.min.css')}}">
       <!-- Typography CSS -->
-      <link rel="stylesheet" href="{{asset('dashboard/css/typography.css')}}">
+      <link rel="stylesheet" href="{{asset('dashboards/css/typography.css')}}">
       <!-- Style CSS -->
-      <link rel="stylesheet" href="{{asset('dashboard/css/style.css')}}">
+      <link rel="stylesheet" href="{{asset('dashboards/css/style.css')}}">
       <!-- Responsive CSS -->
-      <link rel="stylesheet" href="{{asset('dashboard/css/responsive.css')}}">
+      <link rel="stylesheet" href="{{asset('dashboards/css/responsive.css')}}">
       <!-- Full calendar -->
-      <link href="{{asset('dashboard/fullcalendar/core/main.css')}}" rel='stylesheet' />
-      <link href="{{asset('dashboard/fullcalendar/daygrid/main.css')}}" rel='stylesheet' />
-      <link href="{{asset('dashboard/fullcalendar/timegrid/main.css')}}" rel='stylesheet' />
-      <link href="{{asset('dashboard/fullcalendar/list/main.css')}}" rel='stylesheet' />
+      <link href="{{asset('dashboards/fullcalendar/core/main.css')}}" rel='stylesheet' />
+      <link href="{{asset('dashboards/fullcalendar/daygrid/main.css')}}" rel='stylesheet' />
+      <link href="{{asset('dashboards/fullcalendar/timegrid/main.css')}}" rel='stylesheet' />
+      <link href="{{asset('dashboards/fullcalendar/list/main.css')}}" rel='stylesheet' />
 
-      <link rel="stylesheet" href="{{asset('dashboard/css/flatpickr.min.css')}}">
+      <link rel="stylesheet" href="{{asset('dashboards/css/flatpickr.min.css')}}">
 
    </head>
    <body>
@@ -37,8 +37,8 @@
          <!-- Sidebar  -->
          <div class="iq-sidebar">
             <div class="iq-navbar-logo d-flex justify-content-between">
-               <a href="index.html" class="header-logo">
-               <img src="{{asset('dashboard/images/loader.gif')}}" class="img-fluid rounded" alt="">
+               <a href="{{url('/')}}/dashboard" class="header-logo">
+               <img src="{{asset('dashboards/images/loader.gif')}}" class="img-fluid rounded" alt="">
                <span>BliVen</span>
                </a>
                <div class="iq-menu-bt align-self-center">
@@ -62,8 +62,8 @@
                         <div class="hover-circle"><i class="ri-close-fill"></i></div>
                      </div>
                      <div class="iq-navbar-logo d-flex justify-content-between ml-3">
-                        <a href="index.html" class="header-logo">
-                        <img src="{{asset('dashboard/images/loader.gif')}}" class="img-fluid rounded" alt="">
+                        <a href="{{url('/')}}/dashboard" class="header-logo">
+                        <img src="{{asset('dashboards/images/loader.gif')}}" class="img-fluid rounded" alt="">
                         <span>BliVen</span>
                         </a>
                      </div>
@@ -80,13 +80,13 @@
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
                      <ul class="navbar-nav ml-auto navbar-list">
                         <li class="nav-item">
-                           <a class="search-toggle iq-waves-effect language-title" href="#"><span class="ripple rippleEffect" style="width: 98px; height: 98px; top: -15px; left: 56.2969px;"></span><img src="{{asset('dashboard/images/small/flag-01.png')}}" alt="img-flaf" class="img-fluid mr-1" style="height: 16px; width: 16px;"> EN <i class="ri-arrow-down-s-line"></i></a>
+                           <a class="search-toggle iq-waves-effect language-title" href="#"><span class="ripple rippleEffect" style="width: 98px; height: 98px; top: -15px; left: 56.2969px;"></span><img src="{{asset('dashboards/images/small/flag-01.png')}}" alt="img-flaf" class="img-fluid mr-1" style="height: 16px; width: 16px;"> EN <i class="ri-arrow-down-s-line"></i></a>
                            <div class="iq-sub-dropdown">
-                              <a class="iq-sub-card" href="#"><img src="{{asset('dashboard/images/small/flag-02.png')}}" alt="img-flaf" class="img-fluid mr-2">French</a>
-                              <a class="iq-sub-card" href="#"><img src="{{asset('dashboard/images/small/flag-03.png')}}" alt="img-flaf" class="img-fluid mr-2">Spanish</a>
-                              <a class="iq-sub-card" href="#"><img src="{{asset('dashboard/images/small/flag-04.png')}}" alt="img-flaf" class="img-fluid mr-2">Italian</a>
-                              <a class="iq-sub-card" href="#"><img src="{{asset('dashboard/images/small/flag-05.png')}}" alt="img-flaf" class="img-fluid mr-2">German</a>
-                              <a class="iq-sub-card" href="#"><img src="{{asset('dashboard/images/small/flag-06.png')}}" alt="img-flaf" class="img-fluid mr-2">Japanese</a>
+                              <a class="iq-sub-card" href="#"><img src="{{asset('dashboards/images/small/flag-02.png')}}" alt="img-flaf" class="img-fluid mr-2">French</a>
+                              <a class="iq-sub-card" href="#"><img src="{{asset('dashboards/images/small/flag-03.png')}}" alt="img-flaf" class="img-fluid mr-2">Spanish</a>
+                              <a class="iq-sub-card" href="#"><img src="{{asset('dashboards/images/small/flag-04.png')}}" alt="img-flaf" class="img-fluid mr-2">Italian</a>
+                              <a class="iq-sub-card" href="#"><img src="{{asset('dashboards/images/small/flag-05.png')}}" alt="img-flaf" class="img-fluid mr-2">German</a>
+                              <a class="iq-sub-card" href="#"><img src="{{asset('dashboards/images/small/flag-06.png')}}" alt="img-flaf" class="img-fluid mr-2">Japanese</a>
                            </div>
                         </li>
                         <li class="nav-item nav-icon">
@@ -106,7 +106,7 @@
                                     <a href="#" class="iq-sub-card" >
                                        <div class="media align-items-center">
                                           <div class="">
-                                             <img class="avatar-40 rounded" src="{{asset('dashboard/images/user/01.jpg')}}" alt="">
+                                             <img class="avatar-40 rounded" src="{{asset('dashboards/images/user/01.jpg')}}" alt="">
                                           </div>
                                           <div class="media-body ml-3">
                                              <h6 class="mb-0 ">New Payment</h6>
@@ -118,7 +118,7 @@
                                     <a href="#" class="iq-sub-card" >
                                        <div class="media align-items-center">
                                           <div class="">
-                                             <img class="avatar-40 rounded" src="{{asset('dashboard/images/user/02.jpg')}}" alt="">
+                                             <img class="avatar-40 rounded" src="{{asset('dashboards/images/user/02.jpg')}}" alt="">
                                           </div>
                                           <div class="media-body ml-3">
                                              <h6 class="mb-0 ">New customer is join</h6>
@@ -146,7 +146,7 @@
                                     <a href="#" class="iq-sub-card" >
                                        <div class="media align-items-center">
                                           <div class="">
-                                             <img class="avatar-40 rounded" src="{{asset('dashboard/images/user/01.jpg')}}" alt="">
+                                             <img class="avatar-40 rounded" src="{{asset('dashboards/images/user/01.jpg')}}" alt="">
                                           </div>
                                           <div class="media-body ml-3">
                                              <h6 class="mb-0 ">Price Enquiry</h6>
@@ -157,7 +157,7 @@
                                     <a href="#" class="iq-sub-card" >
                                        <div class="media align-items-center">
                                           <div class="">
-                                             <img class="avatar-40 rounded" src="{{asset('dashboard/images/user/02.jpg')}}" alt="">
+                                             <img class="avatar-40 rounded" src="{{asset('dashboards/images/user/02.jpg')}}" alt="">
                                           </div>
                                           <div class="media-body ml-3">
                                              <h6 class="mb-0 ">Bulk Quoatation</h6>
@@ -174,7 +174,7 @@
                   <ul class="navbar-list">
                      <li class="line-height">
                         <a href="#" class="search-toggle iq-waves-effect d-flex align-items-center">
-                           <img src="{{asset('dashboard/images/user/43434746_2187216801551961_7550020093632053248_n.jpg')}}" class="img-fluid rounded mr-3" alt="user">
+                           <img src="{{asset('dashboards/images/user/43434746_2187216801551961_7550020093632053248_n.jpg')}}" class="img-fluid rounded mr-3" alt="user">
                            <div class="caption">
                               <h6 class="mb-0 line-height">Victor Brian</h6>
                               <p class="mb-0">Manager</p>
@@ -363,7 +363,7 @@
                      </div>
                   </div>
                   {{-- <div class="col-lg-4">
-                     <div class="iq-card iq-card-block iq-card-stretch iq-card-height banner-image-block-bg position-relative" style="background: transparent url({{asset('dashboard/images/user/43434746_2187216801551961_7550020093632053248_n-removebg-preview.png')}}) no-repeat scroll center bottom; background-size: contain; height: 440px; box-shadow: none;">
+                     <div class="iq-card iq-card-block iq-card-stretch iq-card-height banner-image-block-bg position-relative" style="background: transparent url({{asset('dashboards/images/user/43434746_2187216801551961_7550020093632053248_n-removebg-preview.png')}}) no-repeat scroll center bottom; background-size: contain; height: 440px; box-shadow: none;">
                      </div>
                   </div> --}}
                   <div class="col-lg-8">
@@ -764,60 +764,60 @@
        <!-- color-customizer END -->
       <!-- Optional JavaScript -->
       <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-      <script src="{{asset('dashboard/js/jquery.min.js')}}"></script>
-      <script src="{{asset('dashboard/js/popper.min.js')}}"></script>
-      <script src="{{asset('dashboard/js/bootstrap.min.js')}}"></script>
+      <script src="{{asset('dashboards/js/jquery.min.js')}}"></script>
+      <script src="{{asset('dashboards/js/popper.min.js')}}"></script>
+      <script src="{{asset('dashboards/js/bootstrap.min.js')}}"></script>
       <!-- Appear JavaScript -->
-      <script src="{{asset('dashboard/js/jquery.appear.js')}}"></script>
+      <script src="{{asset('dashboards/js/jquery.appear.js')}}"></script>
       <!-- Countdown JavaScript -->
-      <script src="{{asset('dashboard/js/countdown.min.js')}}"></script>
+      <script src="{{asset('dashboards/js/countdown.min.js')}}"></script>
       <!-- Counterup JavaScript -->
-      <script src="{{asset('dashboard/js/waypoints.min.js')}}"></script>
-      <script src="{{asset('dashboard/js/jquery.counterup.min.js')}}"></script>
+      <script src="{{asset('dashboards/js/waypoints.min.js')}}"></script>
+      <script src="{{asset('dashboards/js/jquery.counterup.min.js')}}"></script>
       <!-- Wow JavaScript -->
-      <script src="{{asset('dashboard/js/wow.min.js')}}"></script>
+      <script src="{{asset('dashboards/js/wow.min.js')}}"></script>
       <!-- Apexcharts JavaScript -->
-      <script src="{{asset('dashboard/js/apexcharts.js')}}"></script>
+      <script src="{{asset('dashboards/js/apexcharts.js')}}"></script>
       <!-- Slick JavaScript -->
-      <script src="{{asset('dashboard/js/slick.min.js')}}"></script>
+      <script src="{{asset('dashboards/js/slick.min.js')}}"></script>
       <!-- Select2 JavaScript -->
-      <script src="{{asset('dashboard/js/select2.min.js')}}"></script>
+      <script src="{{asset('dashboards/js/select2.min.js')}}"></script>
       <!-- Owl Carousel JavaScript -->
-      <script src="{{asset('dashboard/js/owl.carousel.min.js')}}"></script>
+      <script src="{{asset('dashboards/js/owl.carousel.min.js')}}"></script>
       <!-- Magnific Popup JavaScript -->
-      <script src="{{asset('dashboard/js/jquery.magnific-popup.min.js')}}"></script>
+      <script src="{{asset('dashboards/js/jquery.magnific-popup.min.js')}}"></script>
       <!-- Smooth Scrollbar JavaScript -->
-      <script src="{{asset('dashboard/js/smooth-scrollbar.js')}}"></script>
+      <script src="{{asset('dashboards/js/smooth-scrollbar.js')}}"></script>
       <!-- lottie JavaScript -->
-      <script src="{{asset('dashboard/js/lottie.js')}}"></script>
+      <script src="{{asset('dashboards/js/lottie.js')}}"></script>
       <!-- am core JavaScript -->
-      <script src="{{asset('dashboard/js/core.js')}}"></script>
+      <script src="{{asset('dashboards/js/core.js')}}"></script>
       <!-- am charts JavaScript -->
-      <script src="{{asset('dashboard/js/charts.js')}}"></script>
+      <script src="{{asset('dashboards/js/charts.js')}}"></script>
       <!-- am animated JavaScript -->
-      <script src="{{asset('dashboard/js/animated.js')}}"></script>
+      <script src="{{asset('dashboards/js/animated.js')}}"></script>
        <!-- am Dark JavaScript -->
-      <script src="{{asset('dashboard/js/dark.js')}}"></script>
+      <script src="{{asset('dashboards/js/dark.js')}}"></script>
       <!-- am kelly JavaScript -->
-      <script src="{{asset('dashboard/js/kelly.js')}}"></script>
+      <script src="{{asset('dashboards/js/kelly.js')}}"></script>
       <!-- am maps JavaScript -->
-      <script src="{{asset('dashboard/js/maps.js')}}"></script>
+      <script src="{{asset('dashboards/js/maps.js')}}"></script>
       <!-- am worldLow JavaScript -->
-      <script src="{{asset('dashboard/js/worldLow.js')}}"></script>
+      <script src="{{asset('dashboards/js/worldLow.js')}}"></script>
       <!-- Raphael-min JavaScript -->
-      <script src="{{asset('dashboard/js/raphael-min.js')}}"></script>
+      <script src="{{asset('dashboards/js/raphael-min.js')}}"></script>
       <!-- Morris JavaScript -->
-      <script src="{{asset('dashboard/js/morris.js')}}"></script>
+      <script src="{{asset('dashboards/js/morris.js')}}"></script>
       <!-- Morris min JavaScript -->
-      <script src="{{asset('dashboard/js/morris.min.js')}}"></script>
+      <script src="{{asset('dashboards/js/morris.min.js')}}"></script>
       <!-- Flatpicker Js -->
-      <script src="{{asset('dashboard/js/flatpickr.js')}}"></script>
+      <script src="{{asset('dashboards/js/flatpickr.js')}}"></script>
       <!-- Style Customizer -->
-      <script src="{{asset('dashboard/js/style-customizer.js')}}"></script>
+      <script src="{{asset('dashboards/js/style-customizer.js')}}"></script>
       <!-- Chart Custom JavaScript -->
-      <script src="{{asset('dashboard/js/chart-custom.js')}}"></script>
+      <script src="{{asset('dashboards/js/chart-custom.js')}}"></script>
       <!-- Custom JavaScript -->
-      <script src="{{asset('dashboard/js/custom.js')}}"></script>
+      <script src="{{asset('dashboards/js/custom.js')}}"></script>
    </body>
 
 </html>
