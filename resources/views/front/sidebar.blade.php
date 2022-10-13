@@ -3,7 +3,7 @@
        <li class="active">
           <a href="#dashboard" class="iq-waves-effect" data-toggle="collapse" aria-expanded="true"><span class="ripple rippleEffect"></span><i class="las la-home iq-arrow-left"></i><span>Dashboard</span><i class="ri-arrow-right-s-line iq-arrow-right"></i></a>
           <ul id="dashboard" class="iq-submenu collapse show" data-parent="#iq-sidebar-toggle">
-             <li class="active"><a href="index.html"><i class="las la-laptop-code"></i>Account Dashboard</a></li>
+             <li class="active"><a href="{{url('/')}}/dashboard"><i class="las la-home"></i>Account Dashboard</a></li>
              <li><a href="dashboard-1.html"><i class="las la-ad"></i>Marketing Dashboard</a></li>
              <li><a href="dashboard-2.html"><i class="lab la-bandcamp"></i>Product Management</a></li>
              <li><a href="dashboard-3.html"><i class="las la-atom"></i>Sales Dashboard</a></li>
@@ -13,7 +13,7 @@
           </ul>
        </li>
        <li aria-expanded="true">
-          <a href="#menu-design" class="iq-waves-effect" data-toggle="collapse" aria-expanded="false"><i class="ri-menu-3-line iq-arrow-left"></i><span>Menu Design</span><i class="ri-arrow-right-s-line iq-arrow-right"></i></a>
+          <a href="#menu-design" class="iq-waves-effect" data-toggle="collapse" aria-expanded="false"><i class="ri-menu-3-line iq-arrow-left"></i><span>Sales</span><i class="ri-arrow-right-s-line iq-arrow-right"></i></a>
           <ul id="menu-design" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
              <li><a href="horizontal-menu.html"><i class="ri-git-commit-line"></i>Horizontal menu</a></li>
              <li><a href="horizontal-top-menu.html"><i class="ri-text-spacing"></i>Horizontal Top Menu</a></li>
@@ -21,6 +21,24 @@
              <li><a href="vertical-top-menu.html"><i class="ri-line-height"></i>Vertical block menu</a></li>
           </ul>
        </li>
+       <li aria-expanded="true">
+        <a href="#menu-designs" class="iq-waves-effect" data-toggle="collapse" aria-expanded="false"><i class="ri-menu-3-line iq-arrow-left"></i><span>Purchases</span><i class="ri-arrow-right-s-line iq-arrow-right"></i></a>
+        <ul id="menu-designs" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
+           <li><a href="horizontal-menu.html"><i class="ri-git-commit-line"></i>Horizontal menu</a></li>
+           <li><a href="horizontal-top-menu.html"><i class="ri-text-spacing"></i>Horizontal Top Menu</a></li>
+           <li><a href="two-sidebar.html"><i class="ri-indent-decrease"></i>Two Sidebar</a></li>
+           <li><a href="vertical-top-menu.html"><i class="ri-line-height"></i>Vertical block menu</a></li>
+        </ul>
+     </li>
+     <li aria-expanded="true">
+        <a href="#menu-designz" class="iq-waves-effect" data-toggle="collapse" aria-expanded="false"><i class="ri-menu-3-line iq-arrow-left"></i><span>Inventory</span><i class="ri-arrow-right-s-line iq-arrow-right"></i></a>
+        <ul id="menu-designz" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
+           <li><a href="horizontal-menu.html"><i class="ri-git-commit-line"></i>Horizontal menu</a></li>
+           <li><a href="horizontal-top-menu.html"><i class="ri-text-spacing"></i>Horizontal Top Menu</a></li>
+           <li><a href="two-sidebar.html"><i class="ri-indent-decrease"></i>Two Sidebar</a></li>
+           <li><a href="vertical-top-menu.html"><i class="ri-line-height"></i>Vertical block menu</a></li>
+        </ul>
+     </li>
        <li>
           <a href="calendar.html" class="iq-waves-effect"><i class="las la-calendar iq-arrow-left"></i><span>Calendar</span></a>
        </li>
