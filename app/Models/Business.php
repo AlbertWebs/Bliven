@@ -34,5 +34,6 @@ class Business extends Model
         'partners',
         'drawing',
         'investment',
+        'user_id',
     ];
 }

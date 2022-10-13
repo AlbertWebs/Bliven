@@ -7,7 +7,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <title>Bliven - Financial Software</title>
       <!-- Favicon -->
-      <link rel="shortcut icon" href="{{asset('dashboards/images/favicon.ico')}}" />
+      <link rel="shortcut icon" href="{{asset('dashboards/images/loader.gif')}}" />
       <!-- Bootstrap CSS -->
       <link rel="stylesheet" href="{{asset('dashboards/css/bootstrap.min.css')}}">
       <!-- Typography CSS -->
