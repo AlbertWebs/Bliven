@@ -40,6 +40,7 @@
         </div>
         <form class="multisteps-form__form w-75 order-1" method="post" action="{{route('wizard')}}" id="wizard" enctype="multipart/form-data">
             @csrf
+            <input type="hidden" name="user_id" value="{{Auth::User()->id}}">
             <div class="form-area position-relative">
                 <!-- div 1 -->
                 <div class="multisteps-form__panel js-active" data-animation="slideHorz">

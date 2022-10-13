@@ -27,7 +27,18 @@ class HomeController extends Controller
     public function index()
     {
         //check if setup is complete
-        return view('front.index');
+        $Available = DB::table('users')->where('id',Auth::User()->id)->get();
+        if($Available->isEmpty()){
+            return view('front.index');
+        }else{
+            return view('front.dashboard');
+        }
+    }
+
+    public function dashboard()
+    {
+        //check if setup is complete
+        return view('front.dashboard');
     }
 
     public function wizard(Request $request){
@@ -51,32 +62,8 @@ class HomeController extends Controller
         $request->request->add(['avatar' => $imageName]);
         $data = $request->except(['dob','file','idNo','kra','address','_token']);
         // dd($data);
-        $booking = Business::create($data);
-
-        $bname = $request->bname;
-        $fiscal = $request->fiscal;
-        $bnumber = $request->bnumber;
-        $baddress = $request->baddress;
-        $b_type = $request->b_type;
-        $services_content = $request->services_content;
-        $sources = $request->sources;
-        $service_charge = $request->service_charge;
-        $unit_price = $request->unit_price;
-        $carriage = $request->carriage;
-        $discounts = $request->discounts;
-        $expenses = $request->expenses;
-        $customers_owe_me = $request->customers_owe_me;
-        $supliers_owe = $request->supliers_owe;
-        $long_term_loans = $request->long_term_loans;
-        $prepaid_expenses = $request->prepaid_expenses;
-        $accrued_expenses = $request->accrued_expenses;
-        $partners = $request->partners;
-        $drawing = $request->drawing;
-        $investment = $request->investment;
-
-
-
-
+        $SaveBusinessInfo = Business::create($data);
+        return view('front.dashboard');
 
     }
 }
