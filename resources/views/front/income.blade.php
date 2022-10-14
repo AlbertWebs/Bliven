@@ -19,7 +19,7 @@
                                 <tr>
                                 <th>Year Start</th>
                                 <th>Year End</th>
-                                <th>Clossing Balance</th>
+                                <th>Closing Balance</th>
                                 <th>Action</th>
                                 </tr>
                             </thead>

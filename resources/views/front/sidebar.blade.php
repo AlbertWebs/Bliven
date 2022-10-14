@@ -20,10 +20,8 @@
        <li aria-expanded="true">
         <a href="#menu-designs" class="iq-waves-effect" data-toggle="collapse" aria-expanded="false"><i class="fa fa-money iq-arrow-left"></i><span>Purchases</span><i class="ri-arrow-right-s-line iq-arrow-right"></i></a>
         <ul id="menu-designs" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
-           <li><a href="{{route('coming-soon')}}"><i class="ri-git-commit-line"></i>Horizontal menu</a></li>
-           <li><a href="{{route('coming-soon')}}"><i class="ri-text-spacing"></i>Horizontal Top Menu</a></li>
-           <li><a href="{{route('coming-soon')}}"><i class="ri-indent-decrease"></i>Two Sidebar</a></li>
-           <li><a href="{{route('coming-soon')}}"><i class="ri-line-height"></i>Vertical block menu</a></li>
+            <li><a href="{{route('coming-soon')}}"><i class="fa fa-pencil"></i>Record Purchase</a></li>
+            <li><a href="{{route('coming-soon')}}"><i class="fa fa-money"></i>Purchases</a></li>
         </ul>
      </li>
      <li aria-expanded="true">
