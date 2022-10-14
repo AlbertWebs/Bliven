@@ -61,9 +61,17 @@ class HomeController extends Controller
 
         $request->request->add(['avatar' => $imageName]);
         $data = $request->except(['dob','file','idNo','kra','address','_token']);
-        // dd($data);
         $SaveBusinessInfo = Business::create($data);
         return view('front.dashboard');
 
+    }
+
+    public function income_statement(){
+        //check if setup is complete
+        return view('front.income');
+    }
+
+    public function coming_soon(){
+        return view('front.coming-soon');
     }
 }

@@ -139,7 +139,7 @@ a:hover { text-decoration: none; }
 -----------------------------------------------------------------------*/
 .iq-comingsoon { margin-top: 80px; }
 .countdown { margin: 60px 0 0; padding: 0; }
-.countdown li { margin: 0 30px 0 0; padding: 45px 0; list-style: none; width: 22.8%; display: inline-block; text-align: center; line-height: normal; background: var(--iq-dark-card); float: left; color: var(--iq-dark-body-text); border-radius: 5px; }
+.countdown li { margin: 0 30px 0 0; padding: 45px 0; list-style: none; width: 20%; display: inline-block; text-align: center; line-height: normal; background: var(--iq-dark-card); float: left; color: var(--iq-dark-body-text); border-radius: 5px; }
 .countdown li span { font-size: 60px; display: inline-block; width: 100%; color: var(--iq-primary); }
 .countdown li:last-child { margin-right: 0; }
 .iq-comingsoon-form { position: relative; }
@@ -1018,7 +1018,7 @@ form.comment-text input { padding-right: 130px; }
 .twit-date a { color: var(--iq-dark-body-text); }
 
 /*---------------------------------------------------------------------
-Profile Edit 
+Profile Edit
 -----------------------------------------------------------------------*/
 .profile-pic { max-width: 100%; display: block; border-radius: 50%; -webkit-border-radius: 50%; }
 .profile-img-edit { position: relative; display: inline-block; height: 150px; width: 150px; }

@@ -75,7 +75,7 @@ Index Of Script
             jQuery(this).addClass('active-menu');
             jQuery(this).next().attr("aria-expanded","true");
         })
-        
+
 
 
         /*---------------------------------------------------------------------
@@ -148,12 +148,12 @@ Index Of Script
        /*---------------------------------------------------------------------
         Sidebar Widget
         -----------------------------------------------------------------------*/
-       
+
         jQuery(document).on("click", '.iq-menu > li > a', function() {
             jQuery('.iq-menu > li > a').parent().removeClass('active');
             jQuery(this).parent().addClass('active');
         });
-        
+
 
 
         /*---------------------------------------------------------------------
@@ -167,14 +167,14 @@ Index Of Script
                 jQuery(this).toggleClass('accordion-active').children('div.accordion-details ').slideDown('slow');
             }
         });
-        
+
         /*---------------------------------------------------------------------
         Page Loader
         -----------------------------------------------------------------------*/
         jQuery("#load").fadeOut();
         jQuery("#loading").delay().fadeOut("");
 
-        
+
 
        /*---------------------------------------------------------------------
        Owl Carousel
@@ -330,7 +330,7 @@ Index Of Script
                     slidesToShow: 1
                 }
             }],
-           
+
         });
 
          jQuery('#recent-music').slick({
@@ -353,7 +353,7 @@ Index Of Script
                     slidesToShow: 1
                 }
             }],
-           
+
         });
 
           jQuery('#top-music').slick({
@@ -376,7 +376,7 @@ Index Of Script
                     slidesToShow: 1
                 }
             }],
-           
+
         });
 
 
@@ -409,7 +409,7 @@ Index Of Script
         jQuery(document).on('click', ".wrapper-menu", function() {
             jQuery("body").toggleClass("sidebar-main");
         });
-        
+
 
 
         /*---------------------------------------------------------------------
@@ -519,11 +519,11 @@ Index Of Script
                     jQuery(this).find('input:checkbox[name=todo-check]').attr("checked", true);
                     jQuery(this).addClass('active-task');
                 }
-               
+
             });
         });
 
-       
+
 
         /*------------------------------------------------------------------
         Flatpicker
@@ -534,8 +534,8 @@ Index Of Script
             });
         }
 
-        
-        
+
+
         /*---------------------------------------------------------------------
            Scroll up menu
         -----------------------------------------------------------------------*/
@@ -543,11 +543,11 @@ Index Of Script
         $(window).scroll(function() {
             var scroll = $(window).scrollTop();
             //  console.log(scroll);
-            
+
             if(scroll < position) {
                  $('.tab-menu-horizontal').addClass('menu-up');
                  $('.tab-menu-horizontal').removeClass('menu-down');
-            } 
+            }
             else {
                 $('.tab-menu-horizontal').addClass('menu-down');
                 $('.tab-menu-horizontal').removeClass('menu-up');
